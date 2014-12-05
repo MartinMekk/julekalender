@@ -1,6 +1,8 @@
 __author__ = 'martinsolheim'
+import os
 
-filename = "/Users/martinsolheim/Desktop/julekalender/kilma_data_blindern.txt"
+path_dir = os.path.dirname(__file__)
+filename = os.path.join(path_dir, "data/kilma_data_blindern.txt")
 
 results = []
 with open(filename, newline='\n') as inputFile:
