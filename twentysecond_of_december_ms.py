@@ -1,5 +1,4 @@
 __author__ = 'martinsolheim'
-import numpy as np
 from collections import defaultdict
 import time
 start_time = time.time()
@@ -10,7 +9,10 @@ def can_reduce_with_square(num):
         visited[num] += 1
         if visited[num] > 1:
             return False
-        num = sum(np.power(list(map(int, str(num))), 2))
+        temp_sum = 0
+        for i in list(map(int, str(num))):
+            temp_sum += i ** 2
+        num = temp_sum
     return True
 
 num_list = []
