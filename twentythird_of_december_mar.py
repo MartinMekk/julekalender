@@ -1,6 +1,5 @@
 __author__ = 'maria'
 
-
 def is_number_correct(number):
     first_number = ""
     number_list = map(str, str(number))

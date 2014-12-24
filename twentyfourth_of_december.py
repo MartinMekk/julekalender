@@ -11,7 +11,7 @@ def move_last_digit_check(num):
     return num * 4 == int(''.join(list(map(str, list_num))))
 
 
-for i in range(10, 1000000000):
+for i in range(10, 1000000):
     if last_digit_check(i) and move_last_digit_check(i):
         print(i)
         break
